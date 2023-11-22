@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Esta es una pagina de un restaurante de comida japonesa llamado YAGAMI">
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Umi</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/tablet.css" media="(min-width: 700px)">
+    </head>
+    <body>
+        <header>
+            <img src="images/logos/logo-fondo-blanco.jpg" alt="">
+        </header>
+        <main>
+            <section class="main-hero-container">
+                <div class="main-container--info">
+                    <div class="hero-container-left" >
+                        <h1>“Un viaje culinario a Japón.”</h1>
+                        <p>“Deléitate con lo mejor de Japón en nuestro restaurante auténtico. Saborea la cultura japonesa en cada bocado”.</p>
+                        <div class="hero-buttons">
+                            <button>Conocenos</button>
+                            <button>Reservar</button>
+                        </div>
+                    </div>
+                    <div class="hero-container-right">
+                        <img src="images/entrada/recepcion.jpg" alt="imagen de la recepcion del restaurante">
+                    </div>
+                </div>
+            </section>
+            <section class="main-about-container">
+                <div class="main-about--details">
+                    <h3>Bienvenidos a UMI</h3>
+                    <p><span>"</span>En Umi, ofrecemos una experiencia culinaria auténtica y de alta calidad que te transportará a Japón. Nuestro menú está diseñado por el chef Yutaro Tsuchiya, quien se inspira en las tradiciones de la comida japonesa para crear platos innovadores y deliciosos. Con un ambiente minimalista y elegante, Umi es el lugar perfecto para disfrutar de una cena romántica o una noche con amigos.<span>"</span></p>
+                    </div>
+            </section>
+            <section class="main-gallery-container">
+                <h3>Nuestras Selecciones</h3>
+                <section class="main-cards-container">
+                    <article class="main--card"> 
+                        <img src="images/comida/huevo.jpg" alt="“Enmolada”"> 
+                        <div class="main--card-content"> 
+                            <h4>Enmolada</h4> 
+                            <p>La enmolada es un delicioso plato mexicano que consiste en tortillas demaíz rellenas de pollo deshebrado y queso cotija, bañadas en salsa de molenegro y adornadas con semillas de sésamo y más queso. El mole negro es unasalsa espesa y oscura que contiene chocolate mexicano, lo que le da un saborcomplejo y profundo. La enmolada es una variación de la enchilada, pero conmás personalidad y sabor.
+                            </p> 
+                        </div>
+                    </article>
+                    <article class="main--card"> 
+                        <img src="images/comida/maki.jpg" alt="“Enmolada”"> 
+                        <div class="main--card-content"> 
+                            <h4>Enmolada</h4> 
+                            <p>La enmolada es un delicioso plato mexicano que consiste en tortillas demaíz rellenas de pollo deshebrado y queso cotija, bañadas en salsa de molenegro y adornadas con semillas de sésamo y más queso. El mole negro es unasalsa espesa y oscura que contiene chocolate mexicano, lo que le da un saborcomplejo y profundo. La enmolada es una variación de la enchilada, pero conmás personalidad y sabor.
+                            </p> 
+                        </div>
+                    </article>
+                    <article class="main--card"> 
+                        <img src="images/comida/ramen.jpg" alt="“Enmolada”"> 
+                        <div class="main--card-content"> 
+                            <h4>Enmolada</h4> 
+                            <p>La enmolada es un delicioso plato mexicano que consiste en tortillas demaíz rellenas de pollo deshebrado y queso cotija, bañadas en salsa de molenegro y adornadas con semillas de sésamo y más queso. El mole negro es unasalsa espesa y oscura que contiene chocolate mexicano, lo que le da un saborcomplejo y profundo. La enmolada es una variación de la enchilada, pero conmás personalidad y sabor.
+                            </p> 
+                        </div>
+                    </article>
+                </section>
+            </section>
+            <section class="main-reservacion-container">
+                <h2>Reservación</h2>
+                <form action="procesar_reserva.php" method="POST">
+                <div class="main--form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="main--form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="main--form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="main--form-group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="main--form-group">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+                <div class="main--form-group">
+                    <label for="personas">Número de personas:</label>
+                    <input type="number" id="personas" name="personas" min="1" required>
+                </div>
+                <div class="main--form-group">
+                    <label for="mensaje">Mensaje adicional:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit">Reservar mesa</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-top-container">
+                <div class="footer-top--info"> 
+                    <p><span></span> +52 123 456 7890</p> 
+                    <p><span></span> umi@umimail.com</p> 
+                    <p><span></span> calle de umi #123, Centro.</p>
+                </div> 
+                <button class="footer-top--button">Reservar</button>
+            </div>
+            <div class="footer-bot-container">
+                <div class="footer-bot--social"> 
+                    <p>Síguenos en nuestras redes sociales:</p>
+                    <p><strong>Restaurante Umi</strong></p> 
+                    <p>El mejor sabor de la cocina japonesa en tu ciudad</p> 
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
